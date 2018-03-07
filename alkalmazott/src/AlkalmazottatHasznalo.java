@@ -52,18 +52,18 @@ public class AlkalmazottatHasznalo {
 			
 		}
 		
-		int max = 0;
-		for (int i = 0; i < alkalmazottak.length; i++) {
-			alkalmazottak[i];
-		}
-			if(tomb[i]>tomb[max]) {
-				max=i;
+		int maxfizetesualindexe = 0;
+		for (int i = 1; i < alkalmazottak.length; i++) {
+			if(alkalmazottak[i].getFizetes() > alkalmazottak[maxfizetesualindexe].getFizetes()) {
+				maxfizetesualindexe= i;
 				}
+		
 			
-		System.out.println("A maximum fizetes:"");
-		System.out.println(tomb[max]);
 				
 		}
+		System.out.println("A maximum fizetes:");
+		System.out.println(alkalmazottak[maxfizetesualindexe]);
+
 		
 	}
 	
