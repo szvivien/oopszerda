@@ -29,10 +29,12 @@ public class Futtathato {
 		System.out.println("Valtoztattuk a nyugdijkorhatart.");
 		
 		for (Alkalmazott6 alkalmazott6 : alkalmazottak) {
-			System.out.println(alkalmazott);
+			System.out.println(alkalmazott6);
 		}
 		
 		beolvasas.close();
 	}
+	
+
 
 }
