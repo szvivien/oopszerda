@@ -13,7 +13,7 @@ public class Aru {
 	}
 
 	public int brutto_ar() {
-		return (int) (netto_ar * (1+ afakulcs / 100.0));
+		return (int) (netto_ar * (1 + afakulcs / 100.0));
 	}
 
 	@Override
@@ -21,11 +21,18 @@ public class Aru {
 		return "Aru [nev=" + nev + ", brutto_ar()=" + brutto_ar() + "]";
 	}
 	
-	
-	public int noveltNettoAr(){
-		return netto_ar
+	public void netto_arat_novel(int szazalek) {
+		netto_ar = (int) (netto_ar * (1 + szazalek / 100));
 	}
 	
-	
+	public int dragabb_e(Aru masik_aru){
+		if(brutto_ar() > masik_aru.brutto_ar()){
+			return 1;
+		} else if ( brutto_ar() < masik_aru.brutto_ar()){
+			return -1;
+		} else {
+			return 0;
+		}
+	}
 }
 	
