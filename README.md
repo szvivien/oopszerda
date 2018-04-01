@@ -1,2 +1,0 @@
-# oopszerda
-oop tárgy
