@@ -24,13 +24,13 @@ public class SzinesPont extends Pont implements Szinezheto {
 	}
 	
 	@Override
-	public Color getAlapertelmezett() {
+	public Color getSzin() {
 		// TODO Auto-generated method stub
 		return alapertelmezett;
 	}
 
 	@Override
-	public void setAlapertelmezett(Color szin) {
+	public void setSzin(Color szin) {
 		// TODO Auto-generated method stub
 		this.szin=szin;
 	}
